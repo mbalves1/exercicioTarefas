@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Agenda</title>
+		<!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Agenda</h1>
+			</div>
+        </header>
+        <section class="container">
+			<h2>Adicionar Tarefas</h2>
+		<form class="needs-validation" id="formAdiciona" novalidate>
+			<div class="form-row">
+			  <div class="col-md-6 mb-3">
+				<label for="validationTooltip01">First name</label>
+				<input type="text" name="nome" class="form-control nome" id="nome"  required>
+				<div class="valid-tooltip">
+				  Looks good!
+				</div>
+			  </div>
+			  <div class="col-md-6 mb-3">
+				<label for="validationTooltip02">Tarefas</label>
+				<input type="text" name="tarefas" class="form-control tarefas" id="tarefas"  required>
+				<div class="valid-tooltip">
+				  Looks good!
+				</div>
+			  </div>
+            </div>
+			
+			<button class="btn btn-primary" type="submit">Submit form</button>
+		  </form>
+		</section>
+		<main>
+			<section class="container">
+				<div style="width: 25%;
+				margin: 21px;
+				position: relative;
+				left: 710px;">
+					
+					<input type="search" class="form-control" id="busca" placeholder="search...">
+				  </div>
+				<!-- <div style="margin-left: 56em;">
+					<input type="search" id="busca" placeholder="buscar...">
+				</div> -->
+				<h2>Tarefas</h2>
+				
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Tarefa</th>
+						</tr>	
+					</thead>
+					<tbody id="tabela-tarefas" class="tabela-tarefas">
+					
+					</tbody>
+				</table>
+				
+			</section>
+		</main>
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="js/jquery.mask.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/script.js"></script>
+		<!-- <script src="js/form.js"></script> -->
+		<script src="js/busca.js"></script>
+     
+
+	</body>
+</html>
