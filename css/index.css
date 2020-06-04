@@ -166,3 +166,23 @@ button[disabled=disabled], button:disabled {
 	background-color: green;
 	border-radius: 50%;
 }
+
+
+.bordasCartao{
+	margin:20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px 1px black;
+	background-color: yellow;
+}
+
+.cartao-conteudo{
+	overflow: auto;
+    resize: vertical;
+    height: 179px;
+    width: 400px;
+}
+
+.btn-primary{
+	width:100px;
+	height: 10px;
+}
