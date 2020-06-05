@@ -96,7 +96,7 @@ label{
 	padding: 10px 0px;
 }
 
-button{
+/* button{
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
@@ -112,18 +112,18 @@ button{
     clear: both;
     margin: 10px 0px;
 
-}
+} */
 
-button:active{
+/* button:active{
 	margin-top:0px;
 	border: 0;
-}
+} */
 
-button[disabled=disabled], button:disabled {
+/* button[disabled=disabled], button:disabled {
     background-color: gray;
 	border-color: darkgray;
 
-}
+} */
 
 .adicionar-paciente{
     margin-top: 30px;
@@ -171,8 +171,12 @@ button[disabled=disabled], button:disabled {
 .bordasCartao{
 	margin:20px;
 	border-radius: 10px;
-	box-shadow: 1px 1px 2px 1px black;
+	box-shadow: 0px 0px 6px 1px black;
 	background-color: yellow;
+	padding:10px;
+	display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .cartao-conteudo{
@@ -182,7 +186,55 @@ button[disabled=disabled], button:disabled {
     width: 400px;
 }
 
-.btn-primary{
+.btn{
 	width:100px;
-	height: 10px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: black;
+}
+
+.botaocard{
+	width:25px;
+	height: 25px;
+	border-radius: 50%;
+	position: relative;
+    top: -27px;
+    left: -18px
+
+}
+
+.verde{
+	background-color: green;
+}
+
+.amarelo{
+	background-color: yellow;
+}
+
+.botaocard1{
+	width:25px;
+	height: 25px;
+	border-radius: 50%;
+	position: relative;
+    top: -27px;
+	left: 35px;
+	background-color: green;
+
+}
+
+.botaocard2{
+	width:25px;
+	height: 25px;
+	border-radius: 50%;
+	position: relative;
+    top: -27px;
+	left: 88px;
+	background-color: yellow;
+
+}
+
+
+
+.colorBranco{
+	color: white;
 }
