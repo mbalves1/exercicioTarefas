@@ -11,11 +11,11 @@ botaoTelaCartao.addEventListener('click', function(event){
     containerTabela.classList.toggle('some')
 })
 
-let botaoTelatarefa = document.querySelector('.botaodeTeste');
+let botaoTelatarefa1 = document.querySelector('.botaodeTeste');
 
-botaoTelatarefa.addEventListener('click', function(event){
+botaoTelatarefa1.addEventListener('click', function(event){
     event.preventDefault();
 
-    let tela = document.querySelector('#form-cartao');
-    tela.classList.toggle("some")
+    let tela2 = document.querySelector('#form-cartao');
+    tela2.classList.toggle("some")
 })
