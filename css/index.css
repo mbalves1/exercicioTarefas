@@ -18,6 +18,7 @@ header h1{
 	font-size: 2em;
 	display:inline-block;
 	vertical-align:	middle;
+	margin-top:1vh;
 }
 header h2{
 	font-size: 2em;
@@ -157,14 +158,14 @@ label{
 
 .botaoclasse{
 	margin:15px;
-	background-color:red;
+	background-color:rgb(221, 150, 150);
 	border-radius: 50%;
 	height: 20px;
 }
 
 .botaoverde{
 	margin:15px;
-	background-color: green;
+	background-color: rgb(77, 139, 77);
 	border-radius: 50%;
 	height: 20px;
 }
@@ -192,8 +193,10 @@ label{
 	width:100px;
 	height: 30px;
 	border-radius: 5px;
-	background-color: black;
+	
+    text-align: center;
 }
+
 
 .botaocard{
 	width:25px;
@@ -206,7 +209,7 @@ label{
 }
 
 .verde{
-	background-color: green;
+	background-color: rgb(93, 195, 93);
 }
 
 .amarelo{
@@ -243,4 +246,28 @@ label{
 
 .some{
 	display:none;
+}
+
+.botaoSalvaLimpar{
+	display: flex;
+	
+}
+
+.btn-dark{
+	border-radius: 5px;
+	text-decoration: none;
+	box-shadow:none;
+}
+
+.glyphicon{
+	font-size:25px;
+	color:#FF6600;
+	text-decoration: none;
+	border: none;	
+}
+
+.mural{
+	display: flex;
+	flex-wrap: wrap;
+
 }
