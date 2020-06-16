@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 
@@ -20,10 +21,10 @@
 		</div>
 	</header>
 	<section class="container">
-		
-		<button class="botaodeTesteCartao" style="background-color: darkgrey;" type="submit">Submit form</button>
 
-		<button class="botaodeTeste" style="background-color: grey;" type="submit">Submit form</button>
+		<button class="botaodeTesteCartao  btn-dark" type="submit">View Tarefas</button>
+
+		<button class="botaodeTeste btn-dark"  type="submit">View Recados</button>
 
 	</section>
 
@@ -46,39 +47,57 @@
 							Looks good!
 						</div>
 					</div>
-				</div>
+					<div class="col-md-2 mb-3">
+						<label for="validationTooltip02">Calendário Inicio</label>
+						<input type="date" name="calendario" class="form-control calendario" id="calendario" required>
+						<div class="valid-tooltip">
+							Looks good!
+						</div>
+					</div>
+					<div class="col-md-2 mb-3">
+						<label for="validationTooltip02">Calendário Termino</label>
+						<input type="date" name="calendario2" class="form-control calendario2" id="calendario2"
+							required>
+						<div class="valid-tooltip">
+							Looks good!
+						</div>
+					</div>
 
-				<button class="btn" style="background-color: black;" type="submit">Submit form</button>
+				</div>
+				<div class="botaoSalvaLimpar">
+					<button class="btn btn-success" type="submit">Salvar</button>
+					<button class="btn btn-danger" type="submit">Limpar</button>
+				</div>
 			</form>
 		</div>
 	</section>
-	
+
 	<!-- section cartao -->
-	<section class="container">
+	<section class="container" id="adicionaCartao">
 		<h2>Adicionar cartao
 		</h2>
 
 
-		 </form>
+		</form>
 	</section>
 	<!-- textarea -->
-	<section class="container">
+	<section class="container container-mural">
 		<form id="form-cartao">
 			<div class="form-row">
 				<div class="col-md-6 mb-3">
 					<textarea class="cartao-conteudo" name="cartaoRecado" id="cartaoRecado"></textarea>
 					<div class="valid-tooltip">
 
+					</div>
 				</div>
-			</div>
 		</form>
 
 
-	
-	<button class="btnCartao" style="background-color: black; height: 30px; width: 100px;" id="cartao" type="button">Submit </button>
 
-	<!-- fm cartao -->
-	
+		<button class="btn btn-success btnCartao" id="cartao" type="button">Cartão </button>
+
+		<!-- fm cartao -->
+
 		<div class="mural">
 
 		</div>
@@ -86,7 +105,7 @@
 
 	<main>
 		<!-- cartai -->
-		
+
 
 
 		<!-- cartao fim -->
@@ -102,20 +121,22 @@
 			<!-- <div style="margin-left: 56em;">
 					<input type="search" id="busca" placeholder="buscar...">
 				</div> -->
-			<h2>Tarefas</h2>
+			<h2 id="containertarefa">Tarefas</h2>
+			<div class="contai">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Tarefa</th>
+							<th>Data Inicio</th>
+							<th>Data Termino</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-tarefas" class="tabela-tarefas">
 
-			<table>
-				<thead>
-					<tr>
-						<th>Nome</th>
-						<th>Tarefa</th>
-					</tr>
-				</thead>
-				<tbody id="tabela-tarefas" class="tabela-tarefas">
-
-				</tbody>
-			</table>
-
+					</tbody>
+				</table>
+			</div>
 		</section>
 	</main>
 
@@ -129,6 +150,8 @@
 	<script src="js/busca.js"></script>
 	<script src="js/cartao.js"></script>
 	<script src="js/botaoTela.js"></script>
+	<script src="js/calendario.js"></script>
+	<script src="js/remover.js"></script>
 
 
 
